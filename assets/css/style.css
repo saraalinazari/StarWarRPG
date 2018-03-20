@@ -1,0 +1,23 @@
+img{
+    width: 120px;
+    height: 120px;
+}
+body{
+    background-image: url("../images/background.jpg");
+    font-family: 'Bree Serif', serif;
+    color: turquoise;
+    
+}
+div{
+    padding: 0;
+    margin: 0;
+
+}
+img{
+    padding: 0;
+    margin: 0;
+}
+button{
+    padding: 0;
+    margin: 0;
+}
