@@ -88,12 +88,12 @@ var game = {
         $("#yourChar").append(newDiv);
 
         var newDivName = $("<div>");
-        newDivName.attr("class", "d-flex justify-content-center bg-white");
+        newDivName.attr("class", "d-flex  justify-content-center bg-white");
         newDivName.text(this.characters[intCharIndex].name);
         newDiv.append(newDivName);
 
         var newDivImg = $("<div>");
-        newDivImg.attr("class", "d-flex justify-content-center bg-white");
+        newDivImg.attr("class", "d-flex  justify-content-center bg-white");
         var newBtn = $("<button>");
         var newImg = $("<img>");
         newImg.attr("src",this.characters[intCharIndex].imgAdd);
@@ -104,7 +104,7 @@ var game = {
 
     
         var newDivHP=$("<div>");
-        newDivHP.attr("class", "d-flex justify-content-center bg-white");
+        newDivHP.attr("class", "d-flex  justify-content-center bg-white");
         newDivHP.text(this.characters[intCharIndex].healthPoint);
         newDiv.append(newDivHP);
 
@@ -126,10 +126,10 @@ var game = {
                 var newDivName = $("<div>");
                 newDivName.text(this.characters[i].name);
                 newDiv.append(newDivName);
-                newDivName.attr("class", "d-flex justify-content-center bg-white");
+                newDivName.attr("class", "d-flex  justify-content-center bg-white");
                 var newDivImg = $("<div>");
                 //
-                newDivImg.attr("class", "d-flex justify-content-center bg-white");
+                newDivImg.attr("class", "d-flex  justify-content-center bg-white");
                 var newBtn = $("<button>");
                 var newImg = $("<img>");
                 newImg.attr("src",this.characters[i].imgAdd);
@@ -145,7 +145,7 @@ var game = {
     
             
                 var newDivHP=$("<div>");
-                newDivHP.attr("class", "d-flex justify-content-center bg-white");
+                newDivHP.attr("class", "d-flex  justify-content-center bg-white");
                 newDivHP.text(this.characters[i].healthPoint);
                 newDiv.append(newDivHP);
     
@@ -170,12 +170,12 @@ var game = {
                 $("#defenderChar").append(newDiv);
     
                 var newDivName = $("<div>");
-                newDivName.attr("class", "d-flex justify-content-center bg-white");
+                newDivName.attr("class", "d-flex  justify-content-center bg-white");
                 newDivName.text(this.characters[defenderIndex].name);
                 newDiv.append(newDivName);
     
                 var newDivImg = $("<div>");
-                newDivImg.attr("class", "d-flex justify-content-center bg-white");
+                newDivImg.attr("class", "d-flex  justify-content-center bg-white");
                 var newBtn = $("<button>");
                 var newImg = $("<img>");
                 newImg.attr("src",this.characters[defenderIndex].imgAdd);
@@ -187,7 +187,7 @@ var game = {
     
             
                 var newDivHP=$("<div>");
-                newDivHP.attr("class", "d-flex justify-content-center bg-white");
+                newDivHP.attr("class", "d-flex  justify-content-center bg-white");
                 newDivHP.text(this.characters[defenderIndex].healthPoint);
                 newDiv.append(newDivHP);
 
@@ -204,13 +204,13 @@ var game = {
         //    $("#chars").html(newDiv);
 
             var newDivName = $("<div>");
-            newDivName.attr("class", "d-flex justify-content-center bg-white");
+            newDivName.attr("class", "d-flex  justify-content-center bg-white");
             newDivName.text(this.characters[i].name);
             newDiv.append(newDivName);
             //newDiv.html(newDivName);
 
             var newDivImg = $("<div>");
-            newDivImg.attr("class","d-flex justify-content-center bg-white");
+            newDivImg.attr("class","d-flex  justify-content-center bg-white");
             var newBtn = $("<button>");
             var newImg = $("<img>");
             newImg.attr("src",this.characters[i].imgAdd);
@@ -224,7 +224,7 @@ var game = {
 
         
             var newDivHP=$("<div>");
-            newDivHP.attr("class", "d-flex justify-content-center bg-white");
+            newDivHP.attr("class", "d-flex  justify-content-center bg-white");
             newDivHP.text(this.characters[i].healthPoint);
            newDiv.append(newDivHP);
         //    newDiv.html(newDivHP);
