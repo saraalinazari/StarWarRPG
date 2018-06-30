@@ -1,13 +1,29 @@
 # StarWarRPG
-- I used an object to implement whole game 
-- in my game object, I have a collection that keeps all healthpoints, attackpowerseeds , name ,...
-- when user first click on characters, she picks her character. Then, the character that user selects
-should fight with all other characters.
-- After user picks her character, then all other characters will be enemies. 
-- user pick one of enemies from options, that enemy will be defender, and start to fight.
-- if user loses that defender (that she picked), then she loses and game is over. If she can defeat 
-defender, she neds to pick another defender between enemies to fight.
-- If user can defeat all enemies one by one, then she wins.
-- In each fight, attackpowerseed will increase to attackpower of user character and attackpower will decrease 
-defender healthpoint. Also, attackpowerseed of defender will be assign to the counter attack of defender and decrease the user cjaracter healthpoint by counter attack amount.
-- To start a game, just pick one character. Then you can see options to pick defender character. Pick one character as defender. then start attack by pushing "attack" button. If you lose, it shows You Lost. If you win, you need to pick another character as defender. After you defeat all  characters, then you win the game and you can start from begining.
+
+## Requirement
+- Create another fun and interactive game for web browsers. The app must dynamically update HTML pages with the jQuery library.
+- When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game. The player must then defeat all of the remaining fighters. Enemies should be moved to a different area of the screen. The player chooses an opponent by clicking on an enemy's picture. Once the player selects an opponent, that enemy is moved to a `defender area`. The player will now be able to click the `attack` button.
+    * Whenever the player clicks `attack`, their character damages the defender. The opponent will lose `HP` (health points). These points are displayed at the bottom of the defender's picture. 
+    * The opponent character will instantly counter the attack. When that happens, the player's character will lose some of their `HP`. These points are shown at the bottom of the player character's picture.
+- The player will keep hitting the attack button in an effort to defeat their opponent.
+    * When the defender's `HP` is reduced to zero or below, remove the enemy from the `defender area`. The player character can now choose a new opponent.
+- The player wins the game by defeating all enemy characters. The player loses the game the game if their character's `HP` falls to zero or below.
+
+## Instructions
+- You can see the [live Demo](https://saraalinazari.github.io/StarWarRPG/).
+- You should first select your character, then your enemy.
+- If you can defeat your enemy, you can choose another character.
+- If you defeat all three other characters, you are a winner.
+![StarWar](https://github.com/saraalinazari/StarWarRPG/blob/master/screenshots/screen1.png?raw=true)
+![StarWar](https://github.com/saraalinazari/StarWarRPG/blob/master/screenshots/screen2.png?raw=true)
+
+## Technologies Used
+- HTML
+- CSS
+- Javascript
+- JQuery
+
+## Lessons Learned
+- How to crate object oriented programming in Javascript and JQuery.
+## Authors
+- Sara Alinazari

@@ -1,4 +1,4 @@
-// var attackPower=0;
+
 
 var game = {
     characters : [{name:"Obi-Wan Kenobi",
@@ -43,16 +43,13 @@ var game = {
                 findEnemyIndex = j;
             }
         }
-        // firstCharIndex = this.characters.indexOf("C");
-        // findEnemyIndex = this.characters.indexOf("D");
-        console.log("@@@firstCharIndex"+firstCharIndex);
-        console.log("@@@findEnemyIndex"+findEnemyIndex);
+    
         for(j=0;j<this.characters.length;j++){
             console.log("@@"+ this.characters[j].status+"indexchar"+indexChar);
         }
         if((firstCharIndex<0) && (findEnemyIndex<0)){
             this.characters[indexChar].status = "C";
-           // console.log("@@@findEnemyIndex"+findEnemyIndex+"@@"+this.characters[1].status);
+          
             for(var j=0;j<this.characters.length;j++){
                 console.log("###first if"+ this.characters[j].status);
             }
@@ -64,15 +61,14 @@ var game = {
         if((firstCharIndex>=0) && (findEnemyIndex<0)) {
            this.characters[indexChar].status  ="D";
            for(var j=0;j<this.characters.length;j++){
-            console.log("###############"+ this.characters[j].status);
+            
         }
            $("#enemiesChars").empty();
            this.showPossibleEnemies();
            this.showDefender();
         
         }
-        //if((firstCharIndex>0) && )
-
+    
         for(i=0;i<this.characters.length;i++){
             
         }
@@ -97,7 +93,7 @@ var game = {
         var newBtn = $("<button>");
         var newImg = $("<img>");
         newImg.attr("src",this.characters[intCharIndex].imgAdd);
-        // newImg.val(charIndex);
+    
         newBtn.append(newImg);
         newDivImg.append(newBtn);
         newDiv.append(newDivImg);
@@ -111,7 +107,7 @@ var game = {
     },
 
     showPossibleEnemies: function(){
-        //show all characters with status==N
+
         console.log("shoeEnemies");
         var i=0;
         for(i=0;i<this.characters.length;i++)
@@ -135,8 +131,7 @@ var game = {
                 newImg.attr("src",this.characters[i].imgAdd);
                 newBtn.attr("class","enemies");
                 var iStr="";
-                // iStr = toString(i);
-                // newBtn.val(iStr);
+             
                 newBtn.val(i);
                 console.log("index value ke daram:**"+newBtn.val()+"jsfhkjsh"+newBtn.attr("class"));
                 newBtn.append(newImg);
@@ -195,19 +190,18 @@ var game = {
     startSet: function(){
         var i=0;
         console.log(i);
-        // $("#chars").attr("title" , "charsSec");
+
          for(i=0;i<this.characters.length;i++){
              console.log("this.characters[i].name: "+this.characters[i].name);
              var newDiv = $("<div>");
             newDiv.attr("class","col-md-2");
              $("#chars").append(newDiv);
-        //    $("#chars").html(newDiv);
-
+ 
             var newDivName = $("<div>");
             newDivName.attr("class", "d-flex  justify-content-center bg-white");
             newDivName.text(this.characters[i].name);
             newDiv.append(newDivName);
-            //newDiv.html(newDivName);
+            
 
             var newDivImg = $("<div>");
             newDivImg.attr("class","d-flex  justify-content-center bg-white");
@@ -248,9 +242,7 @@ var game = {
             if(this.characters[i].status == "C"){
                 charIndex = i;
             }
-            // if(this.characters[i].status == "L"){
-            //     winCheck++;
-            // }
+           
         }
         if(defenderIndex >0){
             if((this.characters[defenderIndex].healthPoint > 0) && (this.characters[charIndex]).healthPoint >0){
@@ -282,14 +274,12 @@ var game = {
                     $("#yourAttackPower").text("Please choose another enemy **defender");
                 }
                 
-                // if(game.checkWin()){
-                //     game.charWinner();
-                // }
+                
             }
             if((this.characters[charIndex].healthPoint<=0) ){
-                // $("#yourAttackPower").text("Please choose another enemy** char ");
+              
                 $("#yourChar").css("color","red");
-               // $("#yourChar").text("You Lost!!");
+              
                 $("#yourChar").append("<h1>You Lost!</h1>");
                 game.charLoser();
             }   
@@ -309,11 +299,7 @@ var game = {
         newDiv.append(restartBtn);
         $("#restartButton").append(newDiv);
         this.finished=true;
-        // var restartBtn = $("<input>");
-        // restartBtn.attr("type", "reset");
-        // restartBtn.attr("value", "Restart");
-        // restartBtn.attr("id","resetbtn");
-        // $("#restartButton").append(restartBtn); 
+        
     },
     charWinner: function(){
         $("#defenderChar").empty();
