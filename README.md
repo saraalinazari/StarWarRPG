@@ -14,8 +14,7 @@
 - You should first select your character, then your enemy.
 - If you can defeat your enemy, you can choose another character.
 - If you defeat all three other characters, you are a winner.
-![StarWar](https://github.com/saraalinazari/StarWarRPG/blob/master/screenshots/screen1.png?raw=true)
-![StarWar](https://github.com/saraalinazari/StarWarRPG/blob/master/screenshots/screen2.png?raw=true)
+
 
 ## Technologies Used
 - HTML
